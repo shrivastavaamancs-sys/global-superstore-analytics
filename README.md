@@ -1,4 +1,6 @@
 Global Superstore Sales Analytics & Data Engineering Pipeline
+
+
 An end-to-end data engineering and analytics project built using Azure Cloud (ADLS Gen2, Databricks), PySpark, and Power BI. This project demonstrates medallion architecture data processing, star schema modeling, and an enterprise-grade dark-themed executive dashboard.
 
 🏗️ Architecture & Workflow (Medallion Architecture)
