@@ -1,53 +1,41 @@
-Global Superstore Sales Analytics & Data Engineering Pipeline
+# Global Superstore Sales Analytics & Data Engineering Pipeline
 
+An end-to-end data engineering and analytics project built using **Azure Cloud (ADLS Gen2, Databricks)**, **PySpark**, and **Power BI**. This project demonstrates medallion architecture data processing, star schema modeling, and an enterprise-grade dark-themed executive dashboard.
 
-An end-to-end data engineering and analytics project built using Azure Cloud (ADLS Gen2, Databricks), PySpark, and Power BI. This project demonstrates medallion architecture data processing, star schema modeling, and an enterprise-grade dark-themed executive dashboard.
+---
 
-🏗️ Architecture & Workflow (Medallion Architecture)
-Bronze Layer (Raw): Ingested raw transactional CSV data from source into Azure Data Lake Storage (ADLS) Gen2.
+## 🏗️ Architecture & Workflow (Medallion Architecture)
 
-Silver Layer (Cleaned): Processed raw data using Python/Pandas in Databricks, removed duplicates, handled missing values, and standardized formatting.
+* **Bronze Layer (Raw):** Ingested raw transactional CSV data from source into Azure Data Lake Storage (ADLS) Gen2.
+* **Silver Layer (Cleaned):** Processed raw data using Python/Pandas in Databricks, removed duplicates, handled missing values, and standardized formatting.
+* **Gold Layer (Modelled):** Designed an optimized **Star Schema** consisting of a Fact table (`fact_sales`) and Dimension tables (`dim_customer`, `dim_product`) for high-performance analytics.
 
-Gold Layer (Modelled): Designed a optimized Star Schema consisting of a Fact table (fact_sales) and Dimension tables (dim_customer, dim_product) for high-performance analytics.
+---
 
-🛠️ Tech Stack
-Data Engineering & Cloud: Azure Data Lake Storage (ADLS) Gen2, Azure Databricks, PySpark, Python, Git.
+## 🛠️ Tech Stack
 
-Data Modeling: Star Schema (Fact & Dimension Tables).
+* **Data Engineering & Cloud:** Azure Data Lake Storage (ADLS) Gen2, Azure Databricks, PySpark, Python, Git.
+* **Data Modeling:** Star Schema (Fact & Dimension Tables).
+* **Data Visualization & BI:** Power BI Desktop (Dark Theme UI, Custom Top N Filters, Map Visuals).
+* **Security:** Environment variables (`os.getenv`) for secure credential management and GitHub Secret Scanning compliance.
 
-Data Visualization & BI: Power BI Desktop (Dark Theme UI, Custom Top N Filters, Map Visuals).
+---
 
-Security: Environment variables (os.getenv) for secure credential management and GitHub Secret Scanning compliance.
+## 📊 Power BI Dashboard Highlights
 
-📊 Power BI Dashboard Highlights
-Dark-Themed UI: Designed with a professional dark gradient background and high-contrast KPI cards.
+* **Dark-Themed UI:** Designed with a professional dark gradient background and high-contrast KPI cards.
+* **Key Metrics:** Total Sales, Order Counts, and YoY trends.
+* **Interactive Visuals:** 
+  * Sum of Sales by Year
+  * Top 5 Customers (`Customer Name`)
+  * Top 5 Sub-Categories (`Sub-Category`)
+  * Ship Mode Distribution (Donut Chart)
+  * Regional Sales Map (`Map Visual` with dark skin)
 
-Key Metrics: Total Sales, Order Counts, and YoY trends.
+---
 
-Interactive Visuals:
+## 🚀 How to Run the Project
 
-Sum of Sales by Year
-
-Top 5 Customers (Customer Name)
-
-Top 5 Sub-Categories (Sub-Category)
-
-Ship Mode Distribution (Donut Chart)
-
-Regional Sales Map (Map Visual with dark skin)
-
-🚀 How to Run the Project
-Clone the Repository:
-
-Bash
-git clone https://github.com/shrivastavaamancs-sys/global-superstore-analytics.git
-Configure Azure Credentials:
-Set your environment variables before running the data pipeline script:
-
-Bash
-export AZURE_STORAGE_ACCESS_KEY="your_access_key_here"
-Run the Databricks / Python Pipeline:
-Execute the superstore-sales-dataset.ipynb notebook to process data through Bronze, Silver, and Gold layers.
-
-Explore Power BI Report:
-Open the global-superstore-project.pbix file in Power BI Desktop to view the interactive analytics dashboard.
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/shrivastavaamancs-sys/global-superstore-analytics.git](https://github.com/shrivastavaamancs-sys/global-superstore-analytics.git)
