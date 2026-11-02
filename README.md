@@ -14,7 +14,7 @@ An end-to-end data engineering and analytics project built using **Azure Cloud (
 
 ## 🛠️ Tech Stack
 
-* **Data Engineering & Cloud:** Azure Data Lake Storage (ADLS) Gen2, Azure Databricks, PySpark, Python, Git.
+* **Data Engineering & Cloud:** Azure Data Lake Storage (ADLS Gen2), Azure Databricks, PySpark, Python, Git.
 * **Data Modeling:** Star Schema (Fact & Dimension Tables).
 * **Data Visualization & BI:** Power BI Desktop (Dark Theme UI, Custom Top N Filters, Map Visuals).
 * **Security:** Environment variables (`os.getenv`) for secure credential management and GitHub Secret Scanning compliance.
@@ -39,15 +39,3 @@ An end-to-end data engineering and analytics project built using **Azure Cloud (
 1. **Clone the Repository:**
    ```bash
    git clone [https://github.com/shrivastavaamancs-sys/global-superstore-analytics.git](https://github.com/shrivastavaamancs-sys/global-superstore-analytics.git)
-
-
-   Configure Azure Credentials:
-Set your environment variables before running the data pipeline script:
-
-Bash
-export AZURE_STORAGE_ACCESS_KEY="your_access_key_here"
-Run the Databricks / Python Pipeline:
-Execute the superstore-sales-dataset.ipynb notebook to process data through Bronze, Silver, and Gold layers.
-
-Explore Power BI Report:
-Open the global-superstore-project.pbix file in Power BI Desktop to view the interactive analytics dashboard.
